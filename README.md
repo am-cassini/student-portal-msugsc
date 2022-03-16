@@ -1,4 +1,8 @@
 ﻿# student-portal-msugsc
+Prerequisite
+1. 
+
+
 
 Instructions:
 1. Fork and clone the repo of student-portal-msugsc
