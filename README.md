@@ -1,10 +1,4 @@
-﻿# student-portal-msugsc
-Prerequisite
-1. 
-
-
-
-Instructions:
+﻿# Getting Started
 1. Fork and clone the repo of student-portal-msugsc
 2. Run the command gulp --version. If the command returns with the Gulp version number, it means you have Gulp installed. If not you need to run the command npm install --global gulp-cli to install Gulp.
 3. Run the command npm install to install all the dependencies.
