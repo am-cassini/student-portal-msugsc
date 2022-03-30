@@ -4457,33 +4457,33 @@ textarea.form-control-lg {
 
 .btn-dark {
   color: #fff;
-  background-color: #3e4b5b;
-  border-color: #3e4b5b; }
+  background-color: #751314;
+  border-color: #751314; }
   .btn-dark:hover {
     color: #fff;
-    background-color: #35404d;
-    border-color: #323c49; }
+    background-color: #521617;
+    border-color: #521617; }
   .btn-check:focus + .btn-dark, .btn-dark:focus {
     color: #fff;
-    background-color: #35404d;
-    border-color: #323c49;
+    background-color: #521617;
+    border-color: #521617;
     -webkit-box-shadow: 0 0 0 0.25rem rgba(91, 102, 116, 0.5);
     box-shadow: 0 0 0 0.25rem rgba(91, 102, 116, 0.5); }
   .btn-check:checked + .btn-dark,
   .btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active,
   .show > .btn-dark.dropdown-toggle {
     color: #fff;
-    background-color: #323c49;
-    border-color: #2f3844; }
+    background-color: #751314;
+    border-color: #751314; }
     .btn-check:checked + .btn-dark:focus,
     .btn-check:active + .btn-dark:focus, .btn-dark:active:focus, .btn-dark.active:focus,
     .show > .btn-dark.dropdown-toggle:focus {
-      -webkit-box-shadow: 0 0 0 0.25rem rgba(91, 102, 116, 0.5);
-      box-shadow: 0 0 0 0.25rem rgba(91, 102, 116, 0.5); }
+      -webkit-box-shadow: 0 0 0 0.25rem rgb(255, 255, 255);
+      box-shadow: 0 0 0 0.25rem rgb(255, 255, 255); }
   .btn-dark:disabled, .btn-dark.disabled {
     color: #fff;
-    background-color: #3e4b5b;
-    border-color: #3e4b5b; }
+    background-color: #751314;
+    border-color: #751314; }
 
 .btn-outline-primary {
   color: #b66dff;
@@ -12543,11 +12543,11 @@ code {
   .btn-dark:not(.btn-light):hover, .btn-dark:not(.btn-light):focus, .btn-dark:not(.btn-light):active {
     color: #ffffff; }
   .btn-dark:not(.btn-light):focus, .btn-dark:not(.btn-light):active {
-    background: #3e4b5b;
-    border-color: #3e4b5b; }
+    background:#751314;
+    border-color: #751314; }
 
 .btn-outline-dark:hover, .btn-outline-dark:focus, .btn-outline-dark:active {
-  background: linear-gradient(89deg, #5e7188, #3e4b5b);
+  background: linear-gradient(89deg, #5e7188, #751314);
   color: #000000; }
 
 /* gradient buttons */
