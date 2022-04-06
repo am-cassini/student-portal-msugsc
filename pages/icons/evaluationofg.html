@@ -30,7 +30,7 @@
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-menu"></span>
           </button>
-          <div class="search-field d-none d-md-block">
+        <!-- <div class="search-field d-none d-md-block">
             <form class="d-flex align-items-center h-100" action="#">
               <div class="input-group">
                 <div class="input-group-prepend bg-transparent">
@@ -39,8 +39,19 @@
                 <input type="text" class="form-control border-0" placeholder="Search">
               </div>
             </form>
-          </div>
+          </div>--> 
           <ul class="navbar-nav navbar-nav-right">
+            <button class="nav-item navbar-toggler " type="button">
+              <h4 class="font-weight-light">VLE <i
+                  class="mdi mdi mdi-book-open-page-variant mdi-24px float-right"></i></h4>
+            </button>
+            <button class="nav-item navbar-toggler " type="button">
+              <h4 class="font-weight-light">Repository <i class="mdi mdi mdi-bookmark mdi-24px float-right"></i>
+              </h4>
+            </button>
+            <button class="navbar nav-item navbar-toggler" type="button">
+              <h4 class="font-weight-light">E-Library <i class="mdi mdi mdi-library mdi-24px float-right"></i></h4>
+            </button>
             <li class="nav-item nav-profile dropdown">
               <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                 <div class="nav-profile-img">
@@ -215,7 +226,7 @@
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item"> <a class="nav-link" href="../icons/mdi.html">My Grades</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="../icons/evaluationofg.html">Evaluation of Grades</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../icons/evaluationofg.html">Visualization of Grades</a></li>
                 </ul>
               </div>
             </li>
@@ -304,7 +315,14 @@
                   </div>
                 </div>
             </div>
-
+            <div>
+              <div class="col-md-12">
+                <p style="color: rgb(80, 77, 77);">This is the graph data of the cumulative and grade point average per semester. Note: This graph refreshes every 10 minutes.</p>
+                <p style="color: rgb(123, 123, 123);"> <em>Note: This graph refreshes every 10 minutes.</em></p>
+                <!-- <button type="button" class="btn btn-dark btn-icon-text" href="../icons/evaluationofg.html">
+                    <i class="mdi mdi-file-check btn-icon-prepend"></i> <b style="color: #ffffff;"> Visualization of Grades </b></button> -->
+              </div>  
+            </div>
              
             
           <!-- partial:../../partials/_footer.html 
