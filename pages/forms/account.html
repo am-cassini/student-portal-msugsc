@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MSU Gensan</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <!-- endinject -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="../../assets/images/logo-mini.png" />
+</head>
+
+<body>
+  <div class="container-scroller">
+    <!-- partial:../../partials/_navbar.html -->
+    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+        <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../assets/images/logo.png"
+            alt="logo" /></a>
+        <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.png"
+            alt="logo" /></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-stretch">
+        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+          <span class="mdi mdi-menu"></span>
+        </button>
+
+        <ul class="navbar-nav navbar-nav-right">
+          <button class="nav-item navbar-toggler " type="button">
+            <h4 class="font-weight-normal mb-0">VLE <i
+                class="mdi mdi mdi-book-open-page-variant mdi-24px float-right"></i></h4>
+          </button>
+
+          <button class="nav-item navbar-toggler " type="button">
+            <h4 class="font-weight-normal mb-0">Repository <i class="mdi mdi mdi-bookmark mdi-24px float-right"></i>
+            </h4>
+          </button>
+
+          <button class="navbar nav-item navbar-toggler" type="button">
+            <h4 class="font-weight-normal mb-0">E-Library <i class="mdi mdi mdi-library mdi-24px float-right"></i></h4>
+          </button>
+
+          <li class="nav-item nav-profile dropdown">
+
+            <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <div class="nav-profile-img">
+                <img src="../../assets/images/faces/face15.jpg" alt="image">
+                <span class="availability-status online"></span>
+              </div>
+              <div class="nav-profile-text">
+                <p class="mb-1 text-white">Angelito Cruz</p>
+              </div>
+            </a>
+
+            <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+              <a class="dropdown-item" href="#">
+                <i class="mdi mdi-cached me-2 text-success"></i> Activity Log </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">
+                <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
+            </div>
+          </li>
+          <li class="nav-item d-none d-lg-block full-screen-link">
+            <a class="nav-link">
+              <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              <i class="mdi mdi-email-outline"></i>
+              <span class="count-symbol bg-warning"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+              aria-labelledby="messageDropdown">
+              <h6 class="p-3 mb-0">Messages</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="../../assets/images/faces/face4.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Mark send you a message</h6>
+                  <p class="text-gray mb-0"> 1 Minutes ago </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="../../assets/images/faces/face2.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Cregh send you a message</h6>
+                  <p class="text-gray mb-0"> 15 Minutes ago </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <img src="../../assets/images/faces/face3.jpg" alt="image" class="profile-pic">
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Profile picture updated</h6>
+                  <p class="text-gray mb-0"> 18 Minutes ago </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <h6 class="p-3 mb-0 text-center">4 new messages</h6>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
+              data-bs-toggle="dropdown">
+              <i class="mdi mdi-bell-outline"></i>
+              <span class="count-symbol bg-danger"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+              aria-labelledby="notificationDropdown">
+              <h6 class="p-3 mb-0">Notifications</h6>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-success">
+                    <i class="mdi mdi-calendar"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject font-weight-normal mb-1">Event today</h6>
+                  <p class="text-gray ellipsis mb-0"> Just a reminder that you have an event today </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-warning">
+                    <i class="mdi mdi-settings"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject font-weight-normal mb-1">Settings</h6>
+                  <p class="text-gray ellipsis mb-0"> Update dashboard </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item preview-item">
+                <div class="preview-thumbnail">
+                  <div class="preview-icon bg-info">
+                    <i class="mdi mdi-link-variant"></i>
+                  </div>
+                </div>
+                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                  <h6 class="preview-subject font-weight-normal mb-1">Launch Admin</h6>
+                  <p class="text-gray ellipsis mb-0"> New admin wow! </p>
+                </div>
+              </a>
+              <div class="dropdown-divider"></div>
+              <h6 class="p-3 mb-0 text-center">See all notifications</h6>
+            </div>
+          </li>
+
+          <li class="nav-item nav-settings d-none d-lg-block">
+            <a class="nav-link" href="#">
+              <i class="mdi mdi-format-line-spacing"></i>
+            </a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+          data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item nav-profile">
+            <a href="#" class="nav-link">
+              <div class="nav-profile-image">
+                <img src="../../assets/images/faces/face15.jpg" alt="profile">
+                <span class="login-status online"></span>
+                <!--change to offline or busy as needed-->
+              </div>
+              <div class="nav-profile-text d-flex flex-column">
+                <span class="font-weight-bold mb-2">Angelito Cruz</span>
+                <span class="text-secondary text-small">BS Information Technology</span>
+              </div>
+
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../index.html">
+              <span class="menu-title">Dashboard</span>
+              <i class="mdi mdi-home menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="menu-title">My Schedule</span>
+              <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/icons/mdi.html">
+              <span class="menu-title">My Grades</span>
+              <i class="mdi mdi-contacts menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/forms/basic_elements.html">
+              <span class="menu-title">INC Monitoring</span>
+              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/forms/form_download.html">
+              <span class="menu-title">Downloadable Forms</span>
+              <i class="mdi mdi-chart-bar menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/tables/basic-table.html">
+              <span class="menu-title">Evaluation Form</span>
+              <i class="mdi mdi-table-large menu-icon"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="page-header">
+            <h3 class="page-title"><i class="mdi mdi-account-circle menu-icon"></i> User Profile Page </h3>
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+              </ol>
+            </nav>
+          </div>
+          <!-- START HERE-->
+          <div class="row">
+            <div class="col-sm-12 col-md-4">
+              <div class="mt-1 mb-3 p-3 button-container bg-white border shadow-sm">
+                <div class="profile-gallery">
+                  <div class="mt-3 mb-3">
+                    <img src="../../assets/images/faces/face15.jpg"
+                      style="display: block; margin-left: auto; margin-right: auto;" height="125px" width="125px"
+                      class="rounded-circle shadow profile-img">
+                    <br>
+                    <div class="text-center">
+                      <div>
+                        <h6>Juan Dela Cruz</h6>
+                        <h7>2020-2021</h7><br>
+                        <h7>BSIT</h7><br>
+                        <h7>College of Engineering</h7>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-8 grid-margin stretch-card">
+              <div class="col-sm-12 col-md-15">
+                <div class="mt-1 mb-3 p-3 button-container bg-white border shadow-sm custom-tabs">
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link active" id="overview-tab" data-bs-toggle="tab" data-bs-target="#overview"
+                        type="button" role="tab" aria-controls="overview" aria-selected="true">Overview</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
+                        type="button" role="tab" aria-controls="profile" aria-selected="false">Edit Profile</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings"
+                        type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="change-pw-tab" data-bs-toggle="tab" data-bs-target="#change-pw"
+                        type="button" role="tab" aria-controls="change-pw" aria-selected="false">Change
+                        Password</button>
+                    </li>
+                  </ul>
+
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview-tab">
+                      <div class="table-responsive mb-4">
+                        <br>
+                        <table class="table table-borderless table-striped m-0">
+                          <tbody>
+                            <tr>
+                              <th scope="row">About / Bio</th>
+                              <td>Lorem Ipsum porem muspi</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Present Address</th>
+                              <td>General Santos City</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Permanent Address</th>
+                              <td>General Santos City</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Contact Number</th>
+                              <td>092140023342</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Institutional Email</th>
+                              <td>msu@msu.edu.ph</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Personal Email Address</th>
+                              <td>email@gmail.com</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                      <div class="table-responsive mb-4">
+                        <br>
+                        <table class="table table-borderless table-striped m-0">
+                          <tbody>
+                            <tr>
+                              <th scope="row">Fullname</th>
+                              <td><input type="text" class="form-control" name="txtFullname" placeholder="ex. Juan Dela Cruz" value=""></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">About / Bio</th>
+                              <td><input type="text" class="form-control" name="txtBio" placeholder="ex. Bio / About You" value=""></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Job</th>
+                              <td><input type="text" class="form-control" name="txtJob" placeholder="ex. Web Designer" value=""></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Country</th>
+                              <td><input type="text" class="form-control" name="txtCountry" placeholder="ex. Philippines" value=""></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Address</th>
+                              <td><input type="text" class="form-control" name="txtAddress" placeholder="ex. General Santos City" value=""></td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Personal Email Address</th>
+                              <td><input type="email" class="form-control" name="txtEmail" placeholder="email@email.com" value=""></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">Settings
+                    </div>
+
+                    <div class="tab-pane fade" id="change-pw" role="tabpanel" aria-labelledby="change-pw-tab">Change
+                      Password</div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- END HERE-->
+
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page -->
+  <!-- End plugin js for this page -->
+  <!-- inject:js -->
+  <script src="../../assets/js/off-canvas.js"></script>
+  <script src="../../assets/js/hoverable-collapse.js"></script>
+  <script src="../../assets/js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page -->
+  <script src="../../assets/js/file-upload.js"></script>
+  <!-- End custom js for this page -->
+</body>
+
+</html>
