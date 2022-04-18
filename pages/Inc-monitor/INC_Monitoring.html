@@ -4,32 +4,29 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>MSU Gensan</title>
-  <!-- plugins:css -->
-  <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
-  <!-- endinject -->
-  <!-- Plugin css for this page -->
-  <!-- End plugin css for this page -->
-  <!-- inject:css -->
-  <!-- endinject -->
-  <!-- Layout styles -->
-  <link rel="stylesheet" href="../../assets/css/style.css">
-  <!-- End layout styles -->
-  <link rel="shortcut icon" href="../../assets/images/logo-mini.png" />
-</head>
-
-<body>
-  <div class="container-scroller">
-    <!-- partial:../../partials/_navbar.html -->
-    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../assets/images/logo.png"
-            alt="logo" /></a>
-        <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.png"
-            alt="logo" /></a>
-      </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MSU Gensan | Student Portal</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End Plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../../assets/images/MSUGENSAN.png" />
+  </head>
+  <body>
+    <div class=" container-scroller">
+      <!-- partial:../../partials/_navbar.html -->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../assets/images/STUDENTPORTAL.png" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/MSUGENSAN.png" alt="logo" /></a>
+        </div>
       <div class="navbar-menu-wrapper d-flex align-items-stretch">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
           <span class="mdi mdi-menu"></span>
@@ -59,13 +56,13 @@
                 <span class="availability-status online"></span>
               </div>
               <div class="nav-profile-text">
-                <p class="mb-1 text-white">Mel Andre Y. Duay</p>
+                <p class="mb-1 text-white">Angelito Cruz</p>
               </div>
             </a>
 
             <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
               <a class="dropdown-item" href="#">
-                <i class="mdi mdi-cached me-2 text-success"></i> Activity Log </a>
+                <i class="mdi mdi-cached me-2 text-success"></i> User Account </a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">
                 <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
@@ -194,7 +191,7 @@
                 <!--change to offline or busy as needed-->
               </div>
               <div class="nav-profile-text d-flex flex-column">
-                <span class="font-weight-bold mb-2">Mel Andre Y. Duay</span>
+                <span class="font-weight-bold mb-2">Angelito Cruz</span>
                 <span class="text-secondary text-small">BS Information Technology</span>
               </div>
 
@@ -207,33 +204,47 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-title">My Schedule</span>
-              <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/icons/mdi.html">
-              <span class="menu-title">My Grades</span>
-              <i class="mdi mdi-contacts menu-icon"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/forms/basic_elements.html">
-              <span class="menu-title">INC Monitoring</span>
-              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Downloadable_Forms/Downloadable_Forms.html">
-              <span class="menu-title">Downloadable Forms</span>
-              <i class="mdi mdi-chart-bar menu-icon"></i> 
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/tables/basic-table.html">
-              <span class="menu-title">Evaluation Form</span>
+              <i class="menu-arrow"></i>
               <i class="mdi mdi-table-large menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../My-Sched/My-Schedule.html">My Schedule</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../My-Sched/Subject-Plotting.html">Subject Plotting</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <span class="menu-title">My Grades</span>                
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi mdi-book-minus menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../My-Grades/My_Grades.html">My Grades</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../My-Grades/Visualization_ofGrades.html">Visualization of Grades</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Inc-monitor/INC_Monitoring.html">
+              <span class="menu-title">INC Monitoring</span>
+              <i class="mdi mdi mdi-chart-areaspline menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Downloadable-Forms/Downloadable_Forms.html">
+              <span class="menu-title">Downloadable Forms</span>
+              <i class="mdi mdi mdi-cloud-download menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Eval-Form/Eval_Rating.html">
+              <span class="menu-title">Evaluation Form</span>
+              <i class="mdi mdi mdi-clipboard-text menu-icon"></i>
             </a>
           </li>
         </ul>
@@ -242,46 +253,124 @@
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="page-header">
-            <h3 class="page-title"><i class="mdi mdi-format-list-bulleted menu-icon"></i> Change Password </h3>
+            <h3 class="page-title"> 
+              <span class="page-title-icon bg-gradient-primary text-white me-2">
+              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+            </span>  INC Monitoring </h3>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Change Password</li>
+                <li class="breadcrumb-item active" aria-current="page">INC Monitoring</li>
               </ol>
             </nav>
           </div>
           <!-- START HERE-->
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Change Password Form</h4>
-              <p class="card-description"> Change User Password </p>
-              <form class="forms-sample">
-                <div class="form-group">
-                  <label for="exampleInputName1">New Password</label>
-                  <input type="password" class="form-control" onChange="isPasswordMatch();" id="password_input"
-                    placeholder="*********">
-                </div>
-                <div class="form-group">
-                  <label for="exampleInputEmail3">Confirm Password</label>
-                  <input type="password" class="form-control" onChange="isPasswordMatch();" id="password_input_confirm"
-                    placeholder="********">
-                </div>
-                <button type="submit" id="submit" name="submit" class="btn btn-gradient-secondary mr-2">Submit</button>
-              </form>
-            </div>
-          </div>
-          <!-- END HERE-->
-
+          <h4 class="card-title"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+              <path fill="currentColor"
+                d="M22,17V7H6V17H22M22,5A2,2 0 0,1 24,7V17C24,18.11 23.1,19 22,19H16V21H18V23H10V21H12V19H6C4.89,19 4,18.11 4,17V7A2,2 0 0,1 6,5H22M2,3V15H0V3A2,2 0 0,1 2,1H20V3H2Z" />
+            </svg> INC Table</h4>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th> SUBJECT CODE </th>
+                <th> DESCRIPTION </th>
+                <th> SECTION </th>
+                <th> SCHOOL YEAR </th>
+                <th> SEMESTER </th>
+                <th> LAPSE DATE </th>
+                <th> ACTION </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> ENT101 </td>
+                <td> Startup Essential Fund. of Inno driven Entrep </td>
+                <td> M25-4 </td>
+                <td> 2021-2022 </td>
+                <td> 1 </td>
+                <td> 01-02-2022 </td>
+                <td><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
+                    title="Message Instructor"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor"
+                        d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18" />
+                    </svg></a>
+                </td>
+              </tr>
+              <tr>
+                <td> FIL102 </td>
+                <td> Ekokrisistimo at Pagpapahalaga sa kalikasan </td>
+                <td> M25-3 </td>
+                <td> 2020-2021 </td>
+                <td> 2 </td>
+                <td> 01-02-2022 </td>
+                <td><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
+                    title="Message Instructor"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor"
+                        d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18" />
+                    </svg></a>
+                </td>
+              </tr>
+              <tr>
+                <td> FIL101A </td>
+                <td> Wika a kultura sa Mapayapang Lipunan </td>
+                <td> F325 </td>
+                <td> 2020-2021 </td>
+                <td> 1 </td>
+                <td> 01-02-2022 </td>
+                <td><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
+                    title="Message Instructor"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor"
+                        d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18" />
+                    </svg></a>
+                </td>
+              </tr>
+              <tr>
+                <td> GEC106 </td>
+                <td> Art Appreciation </td>
+                <td> 25K </td>
+                <td> 2018-2019 </td>
+                <td> 2 </td>
+                <td> 01-02-2022 </td>
+                <td><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
+                    title="Message Instructor"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor"
+                        d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18" />
+                    </svg></a>
+                </td>
+              </tr>
+              <tr>
+                <td> MAT051 </td>
+                <td> Calculus 1 </td>
+                <td> 25C </td>
+                <td> 2018-2019 </td>
+                <td> 2 </td>
+                <td> 01-02-2022 </td>
+                <td><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
+                    title="Message Instructor"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                      <path fill="currentColor"
+                        d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18" />
+                    </svg></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <!-- content-wrapper ends -->
-        <!-- partial:../../partials/_footer.html -->
-        <footer class="footer">
-        </footer>
-        <!-- partial -->
+
+
+
+
+        <!-- END HERE-->
+
       </div>
-      <!-- main-panel ends -->
+      <!-- content-wrapper ends -->
+      <!-- partial:../../partials/_footer.html -->
+      <footer class="footer">
+      </footer>
+      <!-- partial -->
     </div>
-    <!-- page-body-wrapper ends -->
+    <!-- main-panel ends -->
+  </div>
+  <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
   <!-- plugins:js -->
@@ -297,30 +386,6 @@
   <!-- Custom js for this page -->
   <script src="../../assets/js/file-upload.js"></script>
   <!-- End custom js for this page -->
-  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
-    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    
 </body>
 
-
-<script>
-  function isPasswordMatch() {
-    var password = $("#password_input").val();
-    var confirmPassword = $("#password_input_confirm").val();
-
-    if (password != confirmPassword) {
-      $('#submit').prop('disabled', true);
-      $('#password_toast').prop('hidden', false);
-    } else {
-      $('#submit').prop('disabled', false);
-      $('#password_toast').prop('hidden', true);
-    }
-  }
-
-  $(document).ready(function () {
-    $('#submit').prop('disabled', true);
-    $("#password_input_confirm").keyup(isPasswordMatch);
-  });
-</script>
-
-</html>a
+</html>
