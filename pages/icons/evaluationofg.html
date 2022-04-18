@@ -30,8 +30,7 @@
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-menu"></span>
           </button>
-          
-        <!--  <div class="search-field d-none d-md-block">
+        <!-- <div class="search-field d-none d-md-block">
             <form class="d-flex align-items-center h-100" action="#">
               <div class="input-group">
                 <div class="input-group-prepend bg-transparent">
@@ -40,7 +39,7 @@
                 <input type="text" class="form-control border-0" placeholder="Search">
               </div>
             </form>
-          </div>-->
+          </div>--> 
           <ul class="navbar-nav navbar-nav-right">
             <button class="nav-item navbar-toggler " type="button">
               <h4 class="font-weight-light">VLE <i
@@ -290,341 +289,42 @@
             <div class="page-header">
               <h3 class="page-title"> 
                 <span class="page-title-icon bg-gradient-primary text-white me-2">
-                <i class="mdi mdi-book-minus menu-icon"></i>
-              </span>  My Grades </h3>
+                <i class="mdi mdi-chart-areaspline menu-icon" href="../icons/mdi.html"></i>
+              </span> Visualization of Grades </h3>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item" aria-current="page">Dashboard</li>
-                  <li class="breadcrumb-item active"><a href="#">My Grades</a></li>
+                  <li class="breadcrumb-item active"><a href="#">Visualization of Grades</a></li>
                 </ol>
               </nav>
             </div>
             <div class="row">
-              <div class="col-md-6">
-                  <h2 style="font-size: 1em; font-weight:600">Cummulative Grade Point Average (CGPA) <b style="color:#751314;">  1.759</b> </h2>
-                  <h6 style="color: #555454;"> Qualified Academic Scholar: <b style="color:#751314;">  No</b> </h6>
-                  <h6 style="color: #555454;">Qualified Dean's Lister: <b style="color:#751314;">  No</b> </h6>
-
-                  <!-- <button type="button" class="btn btn-dark btn-icon-text" href="../icons/evaluationofg.html">
-                    <i class="mdi mdi-file-check btn-icon-prepend"></i> <b style="color: #ffffff;"> Visualization of Grades </b></button> -->
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">GPA per Semester</h4>
+                    <canvas id="lineChart" style="height:250px"></canvas>
+                  </div>
+                </div>
               </div>
-              <div class="col-md-6">
-                <h2 style="font-size: 1em; font-weight:600">Legends:</h2>
-                <img src="../../assets/images/faces-clipart/icons8-lock.svg" alt="image">
-                    - Locked (Grade can't be changed or Final Grade)
-               <br>
-               <img src="../../assets/images/faces-clipart/unlock66.png" alt="image">
-               - Unlock (Grade can be updated by the faculty)
-              </div>
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title"> Cumulative GPA per Semester </h4>
+                    <canvas id="areaChart" style="height:250px"></canvas>
+                  </div>
+                </div>
             </div>
-            <div class="row">
+            <div>
               <div class="col-md-12">
-                <h5 style="color: #ffffff;"></h5>
-              </div>
+                <p style="color: rgb(80, 77, 77);">This is the graph data of the cumulative and grade point average per semester. Note: This graph refreshes every 10 minutes.</p>
+                <p style="color: rgb(123, 123, 123);"> <em>Note: This graph refreshes every 10 minutes.</em></p>
+                <!-- <button type="button" class="btn btn-dark btn-icon-text" href="../icons/evaluationofg.html">
+                    <i class="mdi mdi-file-check btn-icon-prepend"></i> <b style="color: #ffffff;"> Visualization of Grades </b></button> -->
+              </div>  
             </div>
-            <div class="row">
-              <div class="col-12 grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title"> <b> SY: 2020-2021 1st Semester</b>  </h5>
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th> Status </th>
-                            <th> Subject Code </th>
-                            <th> Section </th>
-                            <th> Subject Description </th>
-                            <th> Grade </th>
-                            <th> Remarks </th>
-                            <th> Units </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="py-1">
-                              <img src="../../assets/images/faces-clipart/icons8-lock.svg" alt="image" />
-                            </td>
-                            <td> ITE153 </td>
-                            <td>
-                              <!-- <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div> --> K25-3
-                            </td>
-                            <td> Intro to AI and Expert Systems </td>
-                            <td> 1.75 </td>
-                            <td> Passed </td>
-                            <td> 3 </td>
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="../../assets/images/faces-clipart/icons8-lock.svg" alt="image" />
-                            </td>
-                            <td> ITE182 </td>
-                            <td>
-                              <!--<div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>--> E25-3
-                            </td>
-                            <td> Systems Integration, Admin. and Maintenance </td>
-                            <td> 2.00 </td>
-                            <td> Passed </td>
-                            <td> 3 </td>
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="../../assets/images/faces-clipart/icons8-lock.svg" alt="image" />
-                            </td>
-                            <td> ITE193 </td>
-                            <td>
-                              <!--<div class="progress">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div> --> A25-3
-                            </td>
-                            <td> Special Topics in IT </td>
-                            <td> 2.00 </td>
-                            <td> Passed </td>
-                            <td> 3 </td>
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="../../assets/images/faces-clipart/icons8-lock.svg" alt="image" />
-                            </td>
-                            <td> ITN102 </td>
-                            <td>
-                              <!-- <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div> --> B25-3
-                            </td>
-                            <td> Network Security </td>
-                            <td> 1.50 </td>
-                            <td> Passed </td>
-                            <td> 3 </td>
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="../../assets/images/faces-clipart/icons8-lock.svg" alt="image" />
-                            </td>
-                            <td> ITN103 </td>
-                            <td>
-                              <!-- <div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div> --> O25-3
-                            </td>
-                            <td> Network Management </td>
-                            <td> 2.50 </td>
-                            <td> Passed </td>
-                            <td> 3 </td>
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="../../assets/images/faces-clipart/icons8-lock.svg" alt="image" />
-                            </td>
-                            <td> ITE112 </td>
-                            <td>
-                              <!-- <div class="progress">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div> --> O25
-                            </td>
-                            <td> Algorithmic Graph Theory </td>
-                            <td> 2.25 </td>
-                            <td> Passed </td>
-                            <td> 3 </td>
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="../../assets/images/faces-clipart/icons8-unlock-66.png" alt="image" />
-                            </td>
-                            <td> ITE125 </td>
-                            <td>
-                              <!-- <div class="progress">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div> --> M25
-                            </td>
-                            <td> Introduction to Human Computer Interaction </td>
-                            <td> 1.25 </td>
-                            <td> Passed </td>
-                            <td> 3 </td>
-                          </tr>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          </td>
-                          <td> </td>
-                          <td>
-                            <!-- <div class="progress">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div> -->
-                          </td>
-                          <td></td>
-                          <td> </td>
-                          <td>  </td>
-                          <td> <b style="color:#751314;">GPA: 1.759</b></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="col-sm-2 grid-margin">
-                  <div class="card">
-                    <div class="card-body">
-                      <h3 class="card-title">Student Information</h3>
-                      <div class="table-responsive">
-                      </div>
-                    </div>
-                  </div>
-                </div>--> 
-            </div>
-
-            <div class="row">
-              <div class="col-12 grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <h3 class="card-title"><b>SY: 2020-2021 2nd Semester</b></h3>
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th> Status </th>
-                            <th> Subject Code </th>
-                            <th> Section </th>
-                            <th> Subject Description </th>
-                            <th> Grade </th>
-                            <th> Remarks </th>
-                            <th> Units </th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="py-1">
-                              <img src="../../assets/images/faces-clipart/icons8-lock.svg" alt="image" />
-                            </td>
-                            <td> ITE153 </td>
-                            <td>
-                              <!-- <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div> --> K25-3
-                            </td>
-                            <td> Intro to AI and Expert Systems </td>
-                            <td> 1.75 </td>
-                            <td> Passed </td>
-                            <td> 3 </td>
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="../../assets/images/faces-clipart/icons8-lock.svg" alt="image" />
-                            </td>
-                            <td> ITE182 </td>
-                            <td>
-                              <!--<div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div>--> E25-3
-                            </td>
-                            <td> Systems Integration, Admin. and Maintenance </td>
-                            <td> 2.00 </td>
-                            <td> Passed </td>
-                            <td> 3 </td>
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="../../assets/images/faces-clipart/icons8-lock.svg" alt="image" />
-                            </td>
-                            <td> ITE193 </td>
-                            <td>
-                              <!--<div class="progress">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div> --> A25-3
-                            </td>
-                            <td> Special Topics in IT </td>
-                            <td> 2.00 </td>
-                            <td> Passed </td>
-                            <td> 3 </td>
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="../../assets/images/faces-clipart/icons8-lock.svg" alt="image" />
-                            </td>
-                            <td> ITN102 </td>
-                            <td>
-                              <!-- <div class="progress">
-                                <div class="progress-bar bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div> --> B25-3
-                            </td>
-                            <td> Network Security </td>
-                            <td> 1.50 </td>
-                            <td> Passed </td>
-                            <td> 3 </td>
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="../../assets/images/faces-clipart/icons8-lock.svg" alt="image" />
-                            </td>
-                            <td> ITN103 </td>
-                            <td>
-                              <!-- <div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div> --> O25-3
-                            </td>
-                            <td> Network Management </td>
-                            <td> 2.50 </td>
-                            <td> Passed </td>
-                            <td> 3 </td>
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="../../assets/images/faces-clipart/icons8-lock.svg" alt="image" />
-                            </td>
-                            <td> ITE112 </td>
-                            <td>
-                              <!-- <div class="progress">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div> --> O25
-                            </td>
-                            <td> Algorithmic Graph Theory </td>
-                            <td> 2.25 </td>
-                            <td> Passed </td>
-                            <td> 3 </td>
-                          </tr>
-                          <tr>
-                            <td class="py-1">
-                              <img src="../../assets/images/faces-clipart/icons8-unlock-66.png" alt="image" />
-                            </td>
-                            <td> ITE125 </td>
-                            <td>
-                              <!-- <div class="progress">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                              </div> --> M25
-                            </td>
-                            <td> Introduction to Human Computer Interaction </td>
-                            <td> 1.25 </td>
-                            <td> Passed </td>
-                            <td> 3 </td>
-                          </tr>
-                        </tr>
-                        <tr>
-                          <td></td>
-                          </td>
-                          <td> </td>
-                          <td>
-                            <!-- <div class="progress">
-                              <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div> -->
-                          </td>
-                          <td></td>
-                          <td> </td>
-                          <td>  </td>
-                          <td> <b style="color:#751314;">GPA: 1.759</b></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+             
+            
           <!-- partial:../../partials/_footer.html 
           <footer class="footer">
             <div class="container-fluid d-flex justify-content-between">
@@ -648,7 +348,11 @@
     <!-- endinject -->
     <!-- Custom js for this page -->
     <!-- End custom js for this page -->
-
+    <script src="../../assets/vendors/chart.js/Chart.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../assets/js/chart.js"></script>
+    <!-- End custom js for this page -->
     <!-- <div class="row icons-list">
                       <div class="col-sm-6 col-md-4 col-lg-3">
                         <i class="mdi mdi-access-point"></i> mdi mdi-access-point
