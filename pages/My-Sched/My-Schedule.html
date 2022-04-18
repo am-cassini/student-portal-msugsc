@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>MSU Student Portal</title>
+    <title>MSU Gensan | Student Portal</title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
@@ -16,15 +16,15 @@
     <!-- Layout styles -->
     <link rel="stylesheet" href="../../assets/css/style.css">
     <!-- End layout styles -->
-    <link rel="shortcut icon" href="../../assets/images/favicon.ico" />
+    <link rel="shortcut icon" href="../../assets/images/MSUGENSAN.png" />
   </head>
   <body>
-    <div class="container-scroller">
+    <div class=" container-scroller">
       <!-- partial:../../partials/_navbar.html -->
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-          <a class="navbar-brand brand-logo" href="index.html"><img src="D:\Downloads\student-portal-msugsc-main\student-portal-msugsc-main\assets\images\logo.png" alt="logo"></a>
-          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="D:\Downloads\student-portal-msugsc-main\student-portal-msugsc-main\assets\images\logo-mini.png" alt="logo"></a>
+          <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../assets/images/STUDENTPORTAL.png" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/MSUGENSAN.png" alt="logo" /></a>
         </div>
         <div class="navbar-menu-wrapper d-flex align-items-stretch">
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
@@ -63,7 +63,7 @@
               </a>
               <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
                 <a class="dropdown-item" href="#">
-                  <i class="mdi mdi-cached me-2 text-success"></i> Activity Log </a>
+                  <i class="mdi mdi-cached me-2 text-success"></i> User Account </a>
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="#">
                   <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
@@ -210,34 +210,42 @@
               </a>
               <div class="collapse" id="ui-basic">
                 <ul class="nav flex-column sub-menu">
-                  <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">My Schedule</a></li>
-                  <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/typography.html">Subject Plotting</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../My-Sched/My-Schedule.html">My Schedule</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../My-Sched/Subject-Plotting.html">Subject Plotting</a></li>
                 </ul>
               </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../pages/icons/mdi.html">
-                <span class="menu-title">Grades</span>
-                <i class="mdi mdi-contacts menu-icon"></i>
+              <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+                <span class="menu-title">My Grades</span>                
+                <i class="menu-arrow"></i>
+                <i class="mdi mdi mdi-book-minus menu-icon"></i>
               </a>
+              <div class="collapse" id="ui-basic">
+                <ul class="nav flex-column sub-menu">
+                  <li class="nav-item"> <a class="nav-link" href="../My-Grades/My_Grades.html">My Grades</a></li>
+                  <li class="nav-item"> <a class="nav-link" href="../My-Grades/Visualization_ofGrades.html">Visualization of Grades</a></li>
+                </ul>
+              </div>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../pages/forms/basic_elements.html">
+              <a class="nav-link" href="../Inc-monitor/INC_Monitoring.html">
                 <span class="menu-title">INC Monitoring</span>
-                <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                <i class="mdi mdi mdi-chart-areaspline menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../pages/charts/chartjs.html">
+              <a class="nav-link" href="../Downloadable-Forms/Downloadable_Forms.html">
                 <span class="menu-title">Downloadable Forms</span>
-                <i class="mdi mdi-chart-bar menu-icon"></i>
+                <i class="mdi mdi mdi-cloud-download menu-icon"></i>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="../../pages/tables/basic-table.html">
-                <span class="menu-title">Tables</span>
-                <i class="mdi mdi-table-large menu-icon"></i>
+              <a class="nav-link" href="../Eval-Form/Eval_Rating.html">
+                <span class="menu-title">Evaluation Form</span>
+                <i class="mdi mdi mdi-clipboard-text menu-icon"></i>
               </a>
+            </li>
               
            <!-- </li>
               <li class="nav-item">
