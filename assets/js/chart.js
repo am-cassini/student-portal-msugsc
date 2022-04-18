@@ -5,10 +5,10 @@ $(function () {
    */
   'use strict';
   var data = {
-    labels: ["2013", "2014", "2014", "2015", "2016", "2017"],
+    labels: ["Year 1", "Year 2", "Year 3", "Year 4 (Pending)"],
     datasets: [{
-      label: '# of Votes',
-      data: [10, 19, 3, 5, 2, 3],
+      label: 'CGPA',
+      data: [3.3, 3.7, 4.0, 3.7],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',

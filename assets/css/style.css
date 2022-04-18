@@ -1737,7 +1737,7 @@
   --bs-pink: #E91E63;
   --bs-red: #f96868;
   --bs-orange: #f2a654;
-  --bs-yellow: #f6e84e;
+  --bs-yellow: #EEC650;
   --bs-green: #46c35f;
   --bs-teal: #58d8a3;
   --bs-cyan: #57c7d4;
@@ -4457,33 +4457,33 @@ textarea.form-control-lg {
 
 .btn-dark {
   color: #fff;
-  background-color: #3e4b5b;
-  border-color: #3e4b5b; }
+  background-color: #751314;
+  border-color: #751314; }
   .btn-dark:hover {
     color: #fff;
-    background-color: #35404d;
-    border-color: #323c49; }
+    background-color: #521617;
+    border-color: #521617; }
   .btn-check:focus + .btn-dark, .btn-dark:focus {
     color: #fff;
-    background-color: #35404d;
-    border-color: #323c49;
+    background-color: #521617;
+    border-color: #521617;
     -webkit-box-shadow: 0 0 0 0.25rem rgba(91, 102, 116, 0.5);
     box-shadow: 0 0 0 0.25rem rgba(91, 102, 116, 0.5); }
   .btn-check:checked + .btn-dark,
   .btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active,
   .show > .btn-dark.dropdown-toggle {
     color: #fff;
-    background-color: #323c49;
-    border-color: #2f3844; }
+    background-color: #751314;
+    border-color: #751314; }
     .btn-check:checked + .btn-dark:focus,
     .btn-check:active + .btn-dark:focus, .btn-dark:active:focus, .btn-dark.active:focus,
     .show > .btn-dark.dropdown-toggle:focus {
-      -webkit-box-shadow: 0 0 0 0.25rem rgba(91, 102, 116, 0.5);
-      box-shadow: 0 0 0 0.25rem rgba(91, 102, 116, 0.5); }
+      -webkit-box-shadow: 0 0 0 0.25rem rgb(255, 255, 255);
+      box-shadow: 0 0 0 0.25rem rgb(255, 255, 255); }
   .btn-dark:disabled, .btn-dark.disabled {
     color: #fff;
-    background-color: #3e4b5b;
-    border-color: #3e4b5b; }
+    background-color: #751314;
+    border-color: #751314; }
 
 .btn-outline-primary {
   color: #b66dff;
@@ -8577,7 +8577,7 @@ textarea.form-control-lg {
 
 .bg-success {
   --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important; }
+  background-color:#EEC650  !important; }
 
 .bg-info {
   --bs-bg-opacity: 1;
@@ -11304,7 +11304,7 @@ code {
 
 /* Footer */
 .footer {
-  background: #ffffff;
+  background: #DDDAD3;
   color: color(dark);
  /* border-top: 1px solid #e7dee9; */
   padding: 30px 1rem;
@@ -12543,17 +12543,17 @@ code {
   .btn-dark:not(.btn-light):hover, .btn-dark:not(.btn-light):focus, .btn-dark:not(.btn-light):active {
     color: #ffffff; }
   .btn-dark:not(.btn-light):focus, .btn-dark:not(.btn-light):active {
-    background: #3e4b5b;
-    border-color: #3e4b5b; }
+    background:#751314;
+    border-color: #751314; }
 
 .btn-outline-dark:hover, .btn-outline-dark:focus, .btn-outline-dark:active {
-  background: linear-gradient(89deg, #5e7188, #3e4b5b);
+  background: linear-gradient(89deg, #5e7188, #751314);
   color: #000000; }
 
 /* gradient buttons */
 .btn-gradient-primary {
   background: -webkit-gradient(linear, left top, right top, from(#da8cff), to(#9a55ff));
-  background: linear-gradient(to right, #da8cff, #9a55ff);
+  background: #961C26;
   border: 0;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease; }
@@ -13088,7 +13088,7 @@ code {
       width: 18px;
       height: 18px;
       border-radius: 2px;
-      border: solid #b66dff;
+      border: solid #E86B63;
       border-width: 2px;
       -webkit-transition: all;
       transition: all;
@@ -13112,7 +13112,7 @@ code {
       color: #ffffff; }
     .form-check .form-check-label input[type="checkbox"]:checked + .input-helper:before {
       background: -webkit-gradient(linear, left top, right top, from(#da8cff), to(#9a55ff));
-      background: linear-gradient(to right, #da8cff, #9a55ff);
+      background: #E86B63;
       border-width: 0; }
     .form-check .form-check-label input[type="checkbox"]:checked + .input-helper:after {
       width: 18px;
@@ -13689,8 +13689,8 @@ dl {
     text-align: center; }
   .list-wrapper .completed {
     text-decoration: line-through;
-    -webkit-text-decoration-color: #198ae3;
-    text-decoration-color: #198ae3; }
+    -webkit-text-decoration-color: #961C26;
+    text-decoration-color: #961C26; }
 
 /*-------------------------------------------------------------------*/
 /* === Landing screens === */
@@ -14248,7 +14248,7 @@ dl {
       .sidebar .nav.sub-menu .nav-item {
         padding: 0; }
         .sidebar .nav.sub-menu .nav-item .nav-link {
-          color: #ffffff;
+          color: #3e4b5b;
           padding: 0.75rem 2rem 0.75rem 2rem;
           position: relative;
           font-size: 0.8125rem;
@@ -14270,10 +14270,10 @@ dl {
               left: auto;
               right: 0; }
           .sidebar .nav.sub-menu .nav-item .nav-link.active {
-            color: #b66dff;
+            color: #550D0E;
             background: transparent; }
           .sidebar .nav.sub-menu .nav-item .nav-link:hover {
-            color: #555555; }
+            color: #7a3b48; }
         .sidebar .nav.sub-menu .nav-item:hover {
           background: transparent; }
 
@@ -14347,7 +14347,7 @@ dl {
           -webkit-box-align: center;
           -ms-flex-align: center;
           align-items: center;
-          background: #ffffff;
+          background:#ffffff;
           padding: 0.5rem 1.4rem;
           left: 70px;
           position: absolute;
@@ -14457,3 +14457,197 @@ dl {
   flex-grow: 1; }
 
 /*# sourceMappingURL=style.css.map */
+/*DASHBOARD*/
+
+/*ANNOUNCEMENTS*/
+.fixed-content {
+  overflow-y: auto;
+  height: 350px;
+}
+
+.announcements{
+  margin-top: auto;
+}
+
+.grid-underline{
+  border-top: 1px solid #780007;
+  min-width: 100%;
+  width: 100%;
+}
+
+.announcements .announce{
+  background: #ffffff;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+}
+.announcements .announce .text-announce{
+  display: grid;
+}
+
+/**/
+.coming-up{
+  margin:auto;
+}
+
+.coming-up .coming{
+  color:#065efd;
+  text-align: left;
+}
+
+.coming-up .coming:hover{
+ background-color: #fffc93;
+}
+
+.view-schedule .calendar:hover{
+  text-decoration: underline;
+}
+
+.view-schedule{
+  color:#065efd;
+  text-align: right;
+}
+.view-schedule .calendar{
+  color:#065efd;
+}
+.coming-up .coming{
+  background: #ffffff;
+  padding: 1rem 1rem;
+  transition: all 300ms ease;
+  border-radius: 5px;
+}
+
+.coming-up .coming .coming-list:hover{
+  color: #780007;
+}
+
+.coming-up .coming .coming-list{
+  display: grid;
+  color:#171717;
+}
+
+/*STUDENT OVERVIEW*/
+
+.profile-card{
+overflow: hidden;
+border-radius: 15px;
+padding: 1px;
+margin-bottom: -50px;
+}
+
+.cover{
+  height: 80px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.main-text{
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+
+.profile img{
+  position: relative;
+  display: block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  z-index: 1;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 0px solid #171717;
+  margin-top: -70px;
+  margin-bottom: 10px;
+}
+
+/*PROGRESS*/
+
+  .table-progress th,
+  .table-progress td {
+    vertical-align: auto;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1;
+    white-space: nowrap;
+    padding: 0.9rem; }
+
+    .view-all{
+      color:#065efd;
+    }
+
+    .hide{
+      display: none;
+    }
+
+    .view-all:hover{
+      display: none;
+    }
+    
+    .view-all:hover + .hide {
+      display: block;
+      text-align: left;
+      
+    }
+
+    .sched-button{
+      text-align: right;
+      padding-top: 1rem;
+    }
+
+    .sched-btn{
+      background-color: #fffc93 ;
+      border-radius: 50px;
+      padding: .4rem;
+      padding-left: .9rem;
+      padding-right: .9rem;
+      border-color: transparent;
+      color: #f1562f;
+      font-size: .8rem;
+    }
+
+    .sched-btn:hover{
+      color: #fffc93;
+      background-color: #961C26 ;
+      border-radius: 50px;
+      padding: .4rem;
+      padding-left: .9rem;
+      padding-right: .9rem;
+      border-color: transparent;
+    }
+
+    /*FOOTER*/
+    
+    .MSU{
+      font-size: 1rem;
+      color: #780007;
+      font-family: 'Ondine LT Pro', sans-serif;
+    }
+
+    .footer_names{
+      color: #5E5E5E;
+      font-weight: 900;
+    }
+
+    .footer_offices{
+      color: #780007;
+      font-weight: bolder; 
+    }
+
+    .footer_offices_admission{
+      margin-bottom: 0rem;
+    }
+
+    .footer_logo img{
+      position: relative;
+      display: block;
+      z-index: 1;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-top: -50px;
+      margin-bottom: 10px;
+    }
+
+
+
