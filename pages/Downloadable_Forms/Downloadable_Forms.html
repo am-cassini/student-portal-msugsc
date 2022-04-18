@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MSU Gensan</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../../assets/images/logo-mini.png" />
+</head>
+
+<body>
+    <div class="container-scroller">
+        <!-- partial:../../partials/_navbar.html -->
+        <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+                <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../assets/images/logo.png"
+                        alt="logo" /></a>
+                <a class="navbar-brand brand-logo-mini" href="../../index.html"><img
+                        src="../../assets/images/logo-mini.png" alt="logo" /></a>
+            </div>
+            <div class="navbar-menu-wrapper d-flex align-items-stretch">
+                <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+
+                <ul class="navbar-nav navbar-nav-right">
+                    <button class="nav-item navbar-toggler " type="button">
+                        <h4 class="font-weight-normal mb-0">VLE <i
+                                class="mdi mdi mdi-book-open-page-variant mdi-24px float-right"></i></h4>
+                    </button>
+
+                    <button class="nav-item navbar-toggler " type="button">
+                        <h4 class="font-weight-normal mb-0">Repository <i
+                                class="mdi mdi mdi-bookmark mdi-24px float-right"></i>
+                        </h4>
+                    </button>
+
+                    <button class="navbar nav-item navbar-toggler" type="button">
+                        <h4 class="font-weight-normal mb-0">E-Library <i
+                                class="mdi mdi mdi-library mdi-24px float-right"></i></h4>
+                    </button>
+
+                    <li class="nav-item nav-profile dropdown">
+
+                        <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <div class="nav-profile-img">
+                                <img src="../../assets/images/faces/face15.jpg" alt="image">
+                                <span class="availability-status online"></span>
+                            </div>
+                            <div class="nav-profile-text">
+                                <p class="mb-1 text-white">Mel Andre Y. Duay</p>
+                            </div>
+                        </a>
+
+                        <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
+                            <a class="dropdown-item" href="#">
+                                <i class="mdi mdi-cached me-2 text-success"></i> Activity Log </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">
+                                <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
+                        </div>
+                    </li>
+                    <li class="nav-item d-none d-lg-block full-screen-link">
+                        <a class="nav-link">
+                            <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="mdi mdi-email-outline"></i>
+                            <span class="count-symbol bg-warning"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                            aria-labelledby="messageDropdown">
+                            <h6 class="p-3 mb-0">Messages</h6>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="../../assets/images/faces/face4.jpg" alt="image" class="profile-pic">
+                                </div>
+                                <div
+                                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                    <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Mark send you a message
+                                    </h6>
+                                    <p class="text-gray mb-0"> 1 Minutes ago </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="../../assets/images/faces/face2.jpg" alt="image" class="profile-pic">
+                                </div>
+                                <div
+                                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                    <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Cregh send you a
+                                        message</h6>
+                                    <p class="text-gray mb-0"> 15 Minutes ago </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <img src="../../assets/images/faces/face3.jpg" alt="image" class="profile-pic">
+                                </div>
+                                <div
+                                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                    <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Profile picture updated
+                                    </h6>
+                                    <p class="text-gray mb-0"> 18 Minutes ago </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <h6 class="p-3 mb-0 text-center">4 new messages</h6>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
+                            data-bs-toggle="dropdown">
+                            <i class="mdi mdi-bell-outline"></i>
+                            <span class="count-symbol bg-danger"></span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
+                            aria-labelledby="notificationDropdown">
+                            <h6 class="p-3 mb-0">Notifications</h6>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-success">
+                                        <i class="mdi mdi-calendar"></i>
+                                    </div>
+                                </div>
+                                <div
+                                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                    <h6 class="preview-subject font-weight-normal mb-1">Event today</h6>
+                                    <p class="text-gray ellipsis mb-0"> Just a reminder that you have an event today
+                                    </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-warning">
+                                        <i class="mdi mdi-settings"></i>
+                                    </div>
+                                </div>
+                                <div
+                                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                    <h6 class="preview-subject font-weight-normal mb-1">Settings</h6>
+                                    <p class="text-gray ellipsis mb-0"> Update dashboard </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item preview-item">
+                                <div class="preview-thumbnail">
+                                    <div class="preview-icon bg-info">
+                                        <i class="mdi mdi-link-variant"></i>
+                                    </div>
+                                </div>
+                                <div
+                                    class="preview-item-content d-flex align-items-start flex-column justify-content-center">
+                                    <h6 class="preview-subject font-weight-normal mb-1">Launch Admin</h6>
+                                    <p class="text-gray ellipsis mb-0"> New admin wow! </p>
+                                </div>
+                            </a>
+                            <div class="dropdown-divider"></div>
+                            <h6 class="p-3 mb-0 text-center">See all notifications</h6>
+                        </div>
+                    </li>
+
+                    <li class="nav-item nav-settings d-none d-lg-block">
+                        <a class="nav-link" href="#">
+                            <i class="mdi mdi-format-line-spacing"></i>
+                        </a>
+                    </li>
+                </ul>
+                <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+                    data-toggle="offcanvas">
+                    <span class="mdi mdi-menu"></span>
+                </button>
+            </div>
+        </nav>
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:../../partials/_sidebar.html -->
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item nav-profile">
+                        <a href="#" class="nav-link">
+                            <div class="nav-profile-image">
+                                <img src="../../assets/images/faces/face15.jpg" alt="profile">
+                                <span class="login-status online"></span>
+                                <!--change to offline or busy as needed-->
+                            </div>
+                            <div class="nav-profile-text d-flex flex-column">
+                                <span class="font-weight-bold mb-2">Mel Andre Y. Duay</span>
+                                <span class="text-secondary text-small">BS Information Technology</span>
+                            </div>
+
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">
+                            <span class="menu-title">Dashboard</span>
+                            <i class="mdi mdi-home menu-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <span class="menu-title">My Schedule</span>
+                            <i class="mdi mdi-crosshairs-gps menu-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../pages/icons/mdi.html">
+                            <span class="menu-title">My Grades</span>
+                            <i class="mdi mdi-contacts menu-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../pages/forms/basic_elements.html">
+                            <span class="menu-title">INC Monitoring</span>
+                            <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Downloadable_Forms/Downloadable_Forms.html">
+                            <span class="menu-title">Downloadable Forms</span>
+                            <i class="mdi mdi-chart-bar menu-icon"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../pages/tables/basic-table.html">
+                            <span class="menu-title">Evaluation Form</span>
+                            <i class="mdi mdi-table-large menu-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    <div class="page-header">
+                        <h3 class="page-title"><i class="mdi mdi-chart-bar menu-icon"></i> Downloadable Forms </h3>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Downloadable Forms</li>
+                            </ol>
+                        </nav>
+                    </div>
+
+                    <!-- START HERE-->
+                    <h4 class="card-title"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M19 13C16.83 13 14.93 14.16 13.88 15.89C13.28 15.96 12.65 16 12 16C7.58 16 4 14.21 4 12V9C4 11.21 7.58 13 12 13S20 11.21 20 9V12C20 12.36 19.9 12.71 19.72 13.05C19.5 13 19.24 13 19 13M12 11C16.42 11 20 9.21 20 7S16.42 3 12 3 4 4.79 4 7 7.58 11 12 11M13.1 17.96C12.74 18 12.37 18 12 18C7.58 18 4 16.21 4 14V17C4 19.21 7.58 21 12 21C12.46 21 12.9 21 13.33 20.94C13.12 20.33 13 19.68 13 19C13 18.64 13.04 18.3 13.1 17.96M20 20V16H18V20H16L19 23L22 20H20Z" />
+                        </svg> Forms Available for Download</h4>
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                                <th> FORM NAME </th>
+                                <th> DATE UPDATED </th>
+                                <th> ACTION </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Exam Permit </td>
+                                <td> 2021-2022 </td>
+                                <td> <a href="../../assets/files/Completion_FORM.pdf" target="_blank" data-toggle="tooltip" data-placement="right" title="Download File"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M19 13C16.83 13 14.93 14.16 13.88 15.89C13.28 15.96 12.65 16 12 16C7.58 16 4 14.21 4 12V9C4 11.21 7.58 13 12 13S20 11.21 20 9V12C20 12.36 19.9 12.71 19.72 13.05C19.5 13 19.24 13 19 13M12 11C16.42 11 20 9.21 20 7S16.42 3 12 3 4 4.79 4 7 7.58 11 12 11M13.1 17.96C12.74 18 12.37 18 12 18C7.58 18 4 16.21 4 14V17C4 19.21 7.58 21 12 21C12.46 21 12.9 21 13.33 20.94C13.12 20.33 13 19.68 13 19C13 18.64 13.04 18.3 13.1 17.96M20 20V16H18V20H16L19 23L22 20H20Z" />
+                                        </svg> </a> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td> Registration Form </td>
+                                <td> 2021-2022 </td>
+                                <td> <a href="#" target="_blank"  data-toggle="tooltip" data-placement="right" title="Download File"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                            <path fill="currentColor"
+                                                d="M19 13C16.83 13 14.93 14.16 13.88 15.89C13.28 15.96 12.65 16 12 16C7.58 16 4 14.21 4 12V9C4 11.21 7.58 13 12 13S20 11.21 20 9V12C20 12.36 19.9 12.71 19.72 13.05C19.5 13 19.24 13 19 13M12 11C16.42 11 20 9.21 20 7S16.42 3 12 3 4 4.79 4 7 7.58 11 12 11M13.1 17.96C12.74 18 12.37 18 12 18C7.58 18 4 16.21 4 14V17C4 19.21 7.58 21 12 21C12.46 21 12.9 21 13.33 20.94C13.12 20.33 13 19.68 13 19C13 18.64 13.04 18.3 13.1 17.96M20 20V16H18V20H16L19 23L22 20H20Z" />
+                                        </svg> </a> 
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- END HERE-->
+
+            </div>
+            <!-- content-wrapper ends -->
+            <!-- partial:../../partials/_footer.html -->
+            <footer class="footer">
+            </footer>
+            <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="../../assets/js/file-upload.js"></script>
+    <!-- End custom js for this page -->
+</body>
+
+</html>
