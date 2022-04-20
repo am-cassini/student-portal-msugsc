@@ -4,32 +4,29 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>MSU Gensan</title>
-  <!-- plugins:css -->
-  <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
-  <!-- endinject -->
-  <!-- Plugin css for this page -->
-  <!-- End plugin css for this page -->
-  <!-- inject:css -->
-  <!-- endinject -->
-  <!-- Layout styles -->
-  <link rel="stylesheet" href="../../assets/css/style.css">
-  <!-- End layout styles -->
-  <link rel="shortcut icon" href="../../assets/images/logo-mini.png" />
-</head>
-
-<body>
-  <div class="container-scroller">
-    <!-- partial:../../partials/_navbar.html -->
-    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../assets/images/logo.png"
-            alt="logo" /></a>
-        <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/logo-mini.png"
-            alt="logo" /></a>
-      </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MSU Gensan | Student Portal</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <!-- End Plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="../../assets/images/MSUGENSAN.png" />
+  </head>
+  <body>
+    <div class=" container-scroller">
+      <!-- partial:../../partials/_navbar.html -->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
+          <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../assets/images/STUDENTPORTAL.png" alt="logo" /></a>
+          <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/MSUGENSAN.png" alt="logo" /></a>
+        </div>
       <div class="navbar-menu-wrapper d-flex align-items-stretch">
         <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
           <span class="mdi mdi-menu"></span>
@@ -62,12 +59,11 @@
                 <p class="mb-1 text-white">Rizul John Reyes</p>
               </div>
             </a>
-
             <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item" href="#">
-                <i class="mdi mdi-cached me-2 text-success"></i> Activity Log </a>
+              <a class="dropdown-item" href="User_Account.html">
+                <i class="mdi mdi-account-settings me-2 text-success"></i> User Account </a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
+              <a class="dropdown-item" href="Login.html">
                 <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
             </div>
           </li>
@@ -168,12 +164,6 @@
               <h6 class="p-3 mb-0 text-center">See all notifications</h6>
             </div>
           </li>
-
-          <li class="nav-item nav-settings d-none d-lg-block">
-            <a class="nav-link" href="#">
-              <i class="mdi mdi-format-line-spacing"></i>
-            </a>
-          </li>
         </ul>
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
           data-toggle="offcanvas">
@@ -207,33 +197,47 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-title">My Schedule</span>
-              <i class="mdi mdi-crosshairs-gps menu-icon"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/icons/mdi.html">
-              <span class="menu-title">My Grades</span>
-              <i class="mdi mdi-contacts menu-icon"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/forms/basic_elements.html">
-              <span class="menu-title">INC Monitoring</span>
-              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/forms/form_download.html">
-              <span class="menu-title">Downloadable Forms</span>
-              <i class="mdi mdi-chart-bar menu-icon"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../pages/tables/basic-table.html">
-              <span class="menu-title">Evaluation Form</span>
+              <i class="menu-arrow"></i>
               <i class="mdi mdi-table-large menu-icon"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../My-Sched/My-Schedule.html">My Schedule</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../My-Sched/Subject-Plotting.html">Subject Plotting</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
+              <span class="menu-title">My Grades</span>                
+              <i class="menu-arrow"></i>
+              <i class="mdi mdi mdi-book-minus menu-icon"></i>
+            </a>
+            <div class="collapse" id="general-pages">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="../My-Grades/My_Grades.html">My Grades</a></li>
+                <li class="nav-item"> <a class="nav-link" href="../My-Grades/Visualization_ofGrades.html">Visualization of Grades</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Inc-monitor/INC_Monitoring.html">
+              <span class="menu-title">INC Monitoring</span>
+              <i class="mdi mdi mdi-chart-areaspline menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Downloadable-Forms/Downloadable_Forms.html">
+              <span class="menu-title">Downloadable Forms</span>
+              <i class="mdi mdi mdi-cloud-download menu-icon"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../Eval-Form/Eval_Rating.html">
+              <span class="menu-title">Evaluation Form</span>
+              <i class="mdi mdi mdi-clipboard-text menu-icon"></i>
             </a>
           </li>
         </ul>
@@ -242,7 +246,10 @@
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="page-header">
-            <h3 class="page-title"><i class="mdi mdi-account-circle menu-icon"></i> User Profile Page </h3>
+            <h3 class="page-title"> 
+              <span class="page-title-icon bg-gradient-primary text-white me-2">
+              <i class="mdi mdi-account-circle menu-icon"></i>
+            </span> User Profile </h3>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
@@ -262,9 +269,9 @@
                     <br>
                     <div class="text-center">
                       <div>
-                        <h6>Rizul John Reyes</h6>
+                        <h6>Juan Dela Cruz</h6>
                         <h7>2020-2021</h7><br>
-                        <h7>BSIT</h7><br>
+                        <h7>BS Information Technology</h7><br>
                         <h7>College of Engineering</h7>
                       </div>
                     </div>
@@ -293,9 +300,6 @@
                       <button class="nav-link" id="change-pw-tab" data-bs-toggle="tab" data-bs-target="#change-pw"
                         type="button" role="tab" aria-controls="change-pw" aria-selected="false">Change
                         Password</button>
-                    </li>
-                    <li class="nav-item p-2">
-                      <button type="submit" class="btn btn-dark ml-auto p-2">Save Changes</button>
                     </li>
                   </ul>
 
@@ -387,8 +391,8 @@
         </div>
         <!-- content-wrapper ends -->
         <!-- partial:../../partials/_footer.html -->
-        <footer class="footer">
-        </footer>
+      <!-- <footer class="footer">
+        </footer>--> 
         <!-- partial -->
       </div>
       <!-- main-panel ends -->
