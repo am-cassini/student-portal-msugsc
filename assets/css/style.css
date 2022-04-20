@@ -11469,7 +11469,7 @@ code {
 
 /* Footer */
 .footer {
-  background: #ffffff;
+  background: #dddad3;
   color: color(dark);
  /* border-top: 1px solid #e7dee9; */
   padding: 30px 1rem;
@@ -14754,4 +14754,202 @@ dl {
     font-size: 3rem;
     font-weight: 100;
   }
+
+  /*ANNOUNCEMENTS*/
+.fixed-content {
+  overflow-y: auto;
+  height: 350px;
+}
+
+.announcements{
+  margin-top: auto;
+}
+
+.grid-underline{
+  border-top: 1px solid #780007;
+  min-width: 100%;
+  width: 100%;
+}
+
+.announcements .announce{
+  background: #ffffff;
+  padding: 1rem 1rem;
+  border-radius: 5px;
+}
+.announcements .announce .text-announce{
+  display: grid;
+}
+
+/**/
+.coming-up{
+  margin:auto;
+}
+
+.coming-up .coming{
+  color:#065efd;
+  text-align: left;
+}
+
+.coming-up .coming:hover{
+ background-color: #fffc93;
+}
+
+.view-schedule .cal:hover{
+  text-decoration: underline;
+}
+
+.view-schedule{
+  color:#065efd;
+  text-align: right;
+}
+.view-schedule .cal{
+  color:#065efd;
+}
+.coming-up .coming{
+  background: #ffffff;
+  padding: 1rem 1rem;
+  transition: all 300ms ease;
+  border-radius: 5px;
+}
+
+.coming-up .coming .coming-list:hover{
+  color: #780007;
+}
+
+.coming-up .coming .coming-list{
+  display: grid;
+  color:#171717;
+}
+
+/*STUDENT OVERVIEW*/
+
+.profile-card{
+overflow: hidden;
+border-radius: 15px;
+padding: 1px;
+margin-bottom: -50px;
+}
+
+.cover{
+  height: 80px;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  width: 100%;
+  background-color: transparent;
+}
+
+.main-text{
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+}
+
+.profile img{
+  position: relative;
+  display: block;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  z-index: 1;
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  border: 0px solid #171717;
+  margin-top: -70px;
+  margin-bottom: 10px;
+}
+
+/*PROGRESS*/
+
+  .table-progress th,
+  .table-progress td {
+    vertical-align: auto;
+    text-align: center;
+    font-size: 0.875rem;
+    line-height: 1;
+    white-space: nowrap;
+    padding: 0.9rem; }
+
+    .view-all{
+      color:#065efd;
+    }
+
+    .hide{
+      display: none;
+    }
+
+    .view-all:hover{
+      display: none;
+    }
+    
+    .view-all:hover + .hide {
+      display: block;
+      text-align: left;
+      
+    }
+
+    .sched-button{
+      text-align: right;
+      padding-top: 1rem;
+    }
+
+    .sched-btn{
+      background-color: #fffc93 ;
+      border-radius: 50px;
+      padding: .4rem;
+      padding-left: .9rem;
+      padding-right: .9rem;
+      border-color: transparent;
+      color: #f1562f;
+      font-size: .8rem;
+    }
+
+    .sched-btn:hover{
+      color: #fffc93;
+      background-color: #961C26 ;
+      border-radius: 50px;
+      padding: .4rem;
+      padding-left: .9rem;
+      padding-right: .9rem;
+      border-color: transparent;
+    }
+
+    /*FOOTER*/
+    
+    .MSU{
+      font-size: 1.3rem;
+      color: #780007;
+      font-family: 'Ondine LT Pro', sans-serif;
+    }
+
+    .footer_names{
+      color: #5E5E5E;
+      font-weight: 900;
+    }
+
+    .footer_offices{
+      color: #780007;
+      font-weight: bolder; 
+    }
+
+    .footer_offices_admission{
+      margin-bottom: 0rem;
+    }
+
+    .footer_logo img{
+      position: relative;
+      display: block;
+      z-index: 1;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin: 0px;
+      margin-top: -15px;
+    }
+
+    .footer_socials{
+      text-align: right;
+    }
+
+    .footer_buttons{
+      padding-top: -90px;
+    }
 /*# sourceMappingURL=style.css.map */

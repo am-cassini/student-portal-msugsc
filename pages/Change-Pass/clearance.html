@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -19,7 +20,7 @@
     <link rel="shortcut icon" href="../../assets/images/MSUGENSAN.png" />
   </head>
   <body>
-    <div class="container-scroller">
+    <div class=" container-scroller">
       <!-- partial:../../partials/_navbar.html -->
       <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
@@ -30,6 +31,7 @@
           <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
             <span class="mdi mdi-menu"></span>
           </button>
+          
           <ul class="navbar-nav navbar-nav-right">
             <button class="nav-item navbar-toggler " type="button">
               <h4 class="font-weight-light">VLE <i
@@ -49,7 +51,7 @@
                   <span class="availability-status online"></span>
                 </div>
                 <div class="nav-profile-text">
-                  <p class="mb-1 text-white">Arjay Garbo</p>
+                  <p class="mb-1 text-white">Azalea Manimog</p>
                 </div>
               </a>
               <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
@@ -153,7 +155,7 @@
                 <h6 class="p-3 mb-0 text-center">See all notifications</h6>
               </div>
             </li>
-    
+         
           </ul>
           <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
             <span class="mdi mdi-menu"></span>
@@ -172,7 +174,7 @@
                   
                 </div>
                 <div class="nav-profile-text d-flex flex-column">
-                  <span class="font-weight-bolder mb-2">Arjay Garbo</span>
+                  <span class="font-weight-bolder mb-2">Azalea Manimog</span>
                   <span class="text-secondary text-small">BS Information Technology</span>
                 </div>
               </a>
@@ -229,146 +231,124 @@
             </li>
           </ul>
         </nav>
+        
         <!-- partial -->
+
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="page-header">
-              <h3 class="page-title"> 
-                <span class="page-title-icon bg-gradient-primary text-white me-2">
-                  <i class="mdi mdi mdi-clipboard-text menu-icon"></i>
-                </span>  Evaluation Form </h3>
+                <h3 class="page-title"> 
+                    <span class="page-title-icon bg-gradient-primary text-white me-2">
+                      <i class="mdi mdi mdi-clipboard-text menu-icon"></i>
+                    </span> Clearance Item Information</h3> 
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                  <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Evaluation Form</li>
+                  <li class="breadcrumb-item"><a href="#">Forms</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Clearance</li>
                 </ol>
               </nav>
             </div>
             <div class="row">
-              
-              
-              
+              <div class="col-md-12">
+                <div class="card">
+                  <div class="card-body">
+                    <form class="forms-sample">
+                        <div class="row mb-3">
+                              <label for="mySearch" class="col-sm-2 col-form-label"> <b>Student ID:</b></label>
+                                <div class="col-sm-4">
+                                        <div class="search"> <i class="fa fa-search"></i> 
+                                            <Span><input type="text" class="form-control" placeholder="****-****" required pattern="[0-9]{4}[-]{1}[0-9]{4}"> 
+                                            <button class="btn btn-dark btn-lg btn-block">Search</button> </Span></div>
+                                        </div>
+                                </div>
+                        </div>
+            <div class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="forms-sample">
+                            <div class="form-group">
+                                <div class="row mb-6">
+                                    <label for="inputEmail3" class="col-sm-2 col-form-label ">Date:</label>
+                                      <div class="col-sm-6">
+                                        <input type="date" class="form-control" id="inputEmail3" placeholder="name" required/>
+                                        <i class="fas fa-calendar-alt"></i>
+                                      </div>
+                                  </div>
+                            <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-2 col-form-label">Name:</label>
+                          <div class="col-sm-6">
+                          <input type="email" class="form-control" id="inputEmail3" placeholder="Full Name">
+                      </div>
+                      </div>
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-2 col-form-label">School Year:</label> 
+                          <div class="col-sm-6">
+                          <input type="email" class="form-control" id="inputEmail3" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+                        </div>
+                      </div>
+                        <div class="row mb-3">
+                      <label for="inputEmail3" class="col-sm-2 col-form-label">Semester:</label>
+                      <div class="col-sm-6">
+                        <input type="email" class="form-control" id="inputEmail3" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+                      </div>
+                    </div>
+                      <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-2 col-form-label">Incident Details:</label>
+                          <div class="col-sm-6">
+                          <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Incident Details"></textarea>
+                          </div>
+                      </div>
+                        <div class="row mb-3">
+                          <label for="inputEmail3" class="col-sm-2 col-form-label">How to Clear:</label>
+                          <div class="col-sm-6">
+                            <textarea name="message1" class="form-control" id="message1" cols="30" rows="4" placeholder="How to Clear"></textarea>
+                          </div>
+                      </div>
+                </div> 
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                      <div class="bot" >
+                      <a type="button" href="../Change-Pass/clearance.html" class="btn btn-dark btn-lg btn-block">Cancel</a>
+                      <a type="button" href="../Change-Pass/Clearance_Edit.html"class="btn btn-dark btn-lg btn-block">Edit</a>
+                      <a type="button" href="../Change-Pass/clearance.html"class="btn btn-dark btn-lg btn-block">Submit</a>
+                      </div></ol></nav>
+              </div>
+              <!-- <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form> -->
+          </div>
+
+
+
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
+          <!--<footer class="footer">
+            <div class="container-fluid d-flex justify-content-between">
+              <span class="text-muted d-block text-center text-sm-start d-sm-inline-block">Copyright © bootstrapdash.com 2021</span>
+              <span class="float-none float-sm-end mt-1 mt-sm-0 text-end"> Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from Bootstrapdash.com</span>
             </div>
-          <!--WRITE CONTENT HERE-->
-
-          <html>
-            <head>
-              <title>Faculty Evaluation</title>
-            </head>
-            <body>
-            <form name="frmFaculty Evaluation" action="processor.html" method ="get">
-              <h1
-                style="text-align:center;"
-              <font color = "black">Mindanao State University</font></h1>
-              <p style="text-align:center;">General Santos City</p>
-              <h1><font color = "Maroon"> Faculty Evaluation </font></h1>
-              <th>Faculty</th>
-              <input type ="text" name = "txtName" id="txtName" value="" placeholder="Enter Faculty" maxlength="30"/>
-              <th>Date</th>
-              <input type ="text" name = "txtName" id="txtDate" value="" placeholder="Enter Date" maxlength="12"/>
-              <p><font color = "black">(key,1-poor,2-below average,3-average,4-above average,5-excellent,N/A-not applicable)</font></p>
-                 <div class = "container">
-                   <div class = "box">
-                 </div>      
-                </body></html>
-                <html><head></head><body><table class="table">
-                    <thead>
-                      <tr>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      
-                        <tr>
-                            <td></td>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                            <td>5</td>
-                            <td>N/A</td>
-                          </tr>
-                       <tr>
-                        <td>Demonstration of Basic Science Knowledge</td>
-                        <td><input type="radio" name="evaluation"/>
-                        <td><input type="radio" name="evaluation"/>
-                        <td><input type="radio" name="evaluation"/>
-                        <td><input type="radio" name="evaluation"/>
-                        <td><input type="radio" name="evaluation"/>
-                        <td><input type="radio" name="evaluation"/>
-                       </tr>
-                       <tr>
-                        <td>Demonstration of Technical Knowledge</td>
-                        <td><input type="radio" name="evaluation1"/>
-                        <td><input type="radio" name="evaluation1"/>
-                        <td><input type="radio" name="evaluation1"/>
-                        <td><input type="radio" name="evaluation1"/>
-                        <td><input type="radio" name="evaluation1"/>
-                        <td><input type="radio" name="evaluation1"/>
-                       </tr>
-                       <tr>
-                        <td>Review of Literature/Critical Thinking</td>
-                        <td><input type="radio" name="evaluation2"/>
-                        <td><input type="radio" name="evaluation2"/>
-                        <td><input type="radio" name="evaluation2"/>
-                        <td><input type="radio" name="evaluation2"/>
-                        <td><input type="radio" name="evaluation2"/>
-                        <td><input type="radio" name="evaluation2"/>
-                       </tr>
-                       <tr>
-                        <td>Organization of Presentation</td>
-                        <td><input type="radio" name="evaluation3"/>
-                        <td><input type="radio" name="evaluation3"/>
-                        <td><input type="radio" name="evaluation3"/>
-                        <td><input type="radio" name="evaluation3"/>
-                        <td><input type="radio" name="evaluation3"/>
-                        <td><input type="radio" name="evaluation3"/>
-                       </tr>
-                       <tr>
-                        <td>Clarity of Presentation</td>
-                        <td><input type="radio" name="evaluation4"/>
-                        <td><input type="radio" name="evaluation4"/>
-                        <td><input type="radio" name="evaluation4"/>
-                        <td><input type="radio" name="evaluation4"/>
-                        <td><input type="radio" name="evaluation4"/>
-                        <td><input type="radio" name="evaluation4"/>
-                       </tr>
-                       <tr>
-                        <td>Stimulation of thinking and interest</td>
-                        <td><input type="radio" name="evaluation5"/>
-                        <td><input type="radio" name="evaluation5"/>
-                        <td><input type="radio" name="evaluation5"/>
-                        <td><input type="radio" name="evaluation5"/>
-                        <td><input type="radio" name="evaluation5"/>
-                        <td><input type="radio" name="evaluation5"/>
-                       </tr>
-                       <tr>
-                        <td>Responsive to questions</td>
-                        <td><input type="radio" name="evaluation6"/>
-                        <td><input type="radio" name="evaluation6"/>
-                        <td><input type="radio" name="evaluation6"/>
-                        <td><input type="radio" name="evaluation6"/>
-                        <td><input type="radio" name="evaluation6"/>
-                        <td><input type="radio" name="evaluation6"/>
-                       </tr>
-                       <tr>
-                        <td>Quality of Audio Visual Aids</td>
-                        <td><input type="radio" name="evaluation7"/>
-                        <td><input type="radio" name="evaluation7"/>
-                        <td><input type="radio" name="evaluation7"/>
-                        <td><input type="radio" name="evaluation7"/>
-                        <td><input type="radio" name="evaluation7"/>
-                        <td><input type="radio" name="evaluation7"/>
-                      </tr>                                       
-                    </tbody>                               
-                  </table>     
-                  <body>     
- 
-                 
-
-         
-<div class="form-group">
-    <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
-  </div>
-  <a href="../Eval-Form/Eval_Rating.html" class="btn btn-light">Cancel</a>  
-  <a href="../Eval-Form/Eval_Rating.html" class="btn btn-gradient-primary me-2">Submit</a>
-  
+          </footer> -->
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="../../assets/js/off-canvas.js"></script>
+    <script src="../../assets/js/hoverable-collapse.js"></script>
+    <script src="../../assets/js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="../../assets/js/file-upload.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>
