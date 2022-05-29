@@ -9,6 +9,7 @@
     <!-- plugins:css -->
     <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
     <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+
     <!-- endinject -->
     <!-- Plugin css for this page -->
     <!-- End Plugin css for this page -->
@@ -185,7 +186,6 @@
                 <span class="font-weight-bold mb-2">Angelito Cruz</span>
                 <span class="text-secondary text-small">BS Information Technology</span>
               </div>
-
             </a>
           </li>
           <li class="nav-item">
@@ -198,7 +198,7 @@
             <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <span class="menu-title">My Schedule</span>
               <i class="menu-arrow"></i>
-              <i class="mdi mdi-table-large menu-icon"></i>
+              <i class="mdi mdi mdi-calendar menu-icon"></i>
             </a>
             <div class="collapse" id="ui-basic">
               <ul class="nav flex-column sub-menu">
@@ -211,7 +211,7 @@
             <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
               <span class="menu-title">My Grades</span>                
               <i class="menu-arrow"></i>
-              <i class="mdi mdi mdi-book-minus menu-icon"></i>
+              <i class="mdi mdi-book-minus menu-icon"></i>
             </a>
             <div class="collapse" id="general-pages">
               <ul class="nav flex-column sub-menu">
@@ -229,7 +229,7 @@
           <li class="nav-item">
             <a class="nav-link" href="../Downloadable-Forms/Downloadable_Forms.html">
               <span class="menu-title">Downloadable Forms</span>
-              <i class="mdi mdi mdi-cloud-download menu-icon"></i>
+              <i class="mdi mdi mdi-file-download menu-icon"></i>
             </a>
           </li>
           <li class="nav-item">
@@ -240,13 +240,14 @@
           </li>
         </ul>
       </nav>
+
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
           <div class="page-header">
             <h3 class="page-title"> 
               <span class="page-title-icon bg-gradient-primary text-white me-2">
-              <i class="mdi mdi-format-list-bulleted menu-icon"></i>
+              <i class="mdi mdi mdi-chart-areaspline menu-icon"></i>
             </span>  INC Monitoring </h3>
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
@@ -255,11 +256,10 @@
               </ol>
             </nav>
           </div>
+
           <!-- START HERE-->
-          <h4 class="card-title"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
-              <path fill="currentColor"
-                d="M22,17V7H6V17H22M22,5A2,2 0 0,1 24,7V17C24,18.11 23.1,19 22,19H16V21H18V23H10V21H12V19H6C4.89,19 4,18.11 4,17V7A2,2 0 0,1 6,5H22M2,3V15H0V3A2,2 0 0,1 2,1H20V3H2Z" />
-            </svg> INC Table</h4>
+          <h4 class="card-title">INC Table</h4>
+        <div class="table-responsive-vertical shadow-z-1">
           <table class="table table-bordered">
             <thead>
               <tr>
@@ -274,13 +274,13 @@
             </thead>
             <tbody>
               <tr>
-                <td> ENT101 </td>
-                <td> Startup Essential Fund. of Inno driven Entrep </td>
-                <td> M25-4 </td>
-                <td> 2021-2022 </td>
-                <td> 1 </td>
-                <td> 01-02-2022 </td>
-                <td><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
+                <td data-title="S.CODE"> ENT101 </td>
+                <td data-title="DESC."> Startup Essential Fund. of Inno driven Entrep </td>
+                <td data-title="SECTION"> M25-4 </td>
+                <td data-title="S.Y"> 2021-2022 </td>
+                <td data-title="SEMESTER"> 1 </td>
+                <td data-title="LAPSE DATE"> 01-02-2022 </td>
+                <td data-title="ACTION"><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
                     title="Message Instructor"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
                       <path fill="currentColor"
                         d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18" />
@@ -288,13 +288,13 @@
                 </td>
               </tr>
               <tr>
-                <td> FIL102 </td>
-                <td> Ekokrisistimo at Pagpapahalaga sa kalikasan </td>
-                <td> M25-3 </td>
-                <td> 2020-2021 </td>
-                <td> 2 </td>
-                <td> 01-02-2022 </td>
-                <td><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
+                <td data-title="S.CODE"> FIL102 </td>
+                <td data-title="DESC."> Ekokrisistimo at Pagpapahalaga sa kalikasan </td>
+                <td data-title="SECTION"> M25-3 </td>
+                <td data-title="S.Y"> 2020-2021 </td>
+                <td data-title="SEMESTER"> 2 </td>
+                <td data-title="LAPSE DATE"> 01-02-2022 </td>
+                <td data-title="ACTION"><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
                     title="Message Instructor"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
                       <path fill="currentColor"
                         d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18" />
@@ -302,13 +302,13 @@
                 </td>
               </tr>
               <tr>
-                <td> FIL101A </td>
-                <td> Wika a kultura sa Mapayapang Lipunan </td>
-                <td> F325 </td>
-                <td> 2020-2021 </td>
-                <td> 1 </td>
-                <td> 01-02-2022 </td>
-                <td><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
+                <td data-title="S.CODE"> FIL101A </td>
+                <td data-title="DESC."> Wika a kultura sa Mapayapang Lipunan </td>
+                <td data-title="SECTION"> F325 </td>
+                <td data-title="S.Y"> 2020-2021 </td>
+                <td data-title="SEMESTER"> 1 </td>
+                <td data-title="LAPSE DATE"> 01-02-2022 </td>
+                <td data-title="ACTION"><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
                     title="Message Instructor"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
                       <path fill="currentColor"
                         d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18" />
@@ -316,13 +316,13 @@
                 </td>
               </tr>
               <tr>
-                <td> GEC106 </td>
-                <td> Art Appreciation </td>
-                <td> 25K </td>
-                <td> 2018-2019 </td>
-                <td> 2 </td>
-                <td> 01-02-2022 </td>
-                <td><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
+                <td data-title="S.CODE"> GEC106 </td>
+                <td data-title="DESC."> Art Appreciation </td>
+                <td data-title="SECTION"> 25K </td>
+                <td data-title="S.Y"> 2018-2019 </td>
+                <td data-title="SEMESTER"> 2 </td>
+                <td data-title="LAPSE DATE"> 01-02-2022 </td>
+                <td data-title="ACTION"><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
                     title="Message Instructor"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
                       <path fill="currentColor"
                         d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18" />
@@ -330,13 +330,13 @@
                 </td>
               </tr>
               <tr>
-                <td> MAT051 </td>
-                <td> Calculus 1 </td>
-                <td> 25C </td>
-                <td> 2018-2019 </td>
-                <td> 2 </td>
-                <td> 01-02-2022 </td>
-                <td><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
+                <td data-title="S.CODE"> MAT051 </td>
+                <td data-title="DESC."> Calculus 1 </td>
+                <td data-title="SECTION"> 25C </td>
+                <td data-title="S.Y"> 2018-2019 </td>
+                <td data-title="SEMESTER"> 2 </td>
+                <td data-title="LAPSE DATE"> 01-02-2022 </td>
+                <td data-title="ACTION"><a href="#" target="_blank" data-toggle="tooltip" data-placement="right"
                     title="Message Instructor"><svg style="width:24px;height:24px" viewBox="0 0 24 24">
                       <path fill="currentColor"
                         d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2M6,9H18V11H6M14,14H6V12H14M18,8H6V6H18" />
@@ -346,12 +346,8 @@
             </tbody>
           </table>
         </div>
-
-
-
-
+        </div>
         <!-- END HERE-->
-
       </div>
       <!-- content-wrapper ends -->
       <!-- partial:../../partials/_footer.html -->

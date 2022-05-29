@@ -4,321 +4,59 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>MSU Gensan | Student Portal</title>
-    <!-- plugins:css -->
-    <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
-    <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
-    <!-- endinject -->
-    <!-- Plugin css for this page -->
-    <!-- End Plugin css for this page -->
-    <!-- inject:css -->
-    <!-- endinject -->
-    <!-- Layout styles -->
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <!-- End layout styles -->
-    <link rel="shortcut icon" href="../../assets/images/MSUGENSAN.png" />
-  </head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MSU Gensan</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../assets/vendors/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../assets/vendors/css/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- Plugin css for this page -->
+  <!-- End Plugin css for this page -->
+  <!-- inject:css -->
+  <!-- endinject -->
+  <!-- Layout styles -->
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <!-- End layout styles -->
+  <link rel="shortcut icon" href="../../assets/images/logo-mini.png" />
+</head>
 
 <body>
   <div class="container-scroller">
-    <!-- partial:../../partials/_navbar.html -->
-    <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-      <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo" href="../../index.html"><img src="../../assets/images/STUDENTPORTAL.png" alt="logo" /></a>
-        <a class="navbar-brand brand-logo-mini" href="../../index.html"><img src="../../assets/images/MSUGENSAN.png" alt="logo" /></a>
-      </div>
-      <div class="navbar-menu-wrapper d-flex align-items-stretch">
-        <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
-          <span class="mdi mdi-menu"></span>
-        </button>
-
-        <ul class="navbar-nav navbar-nav-right">
-          <button class="nav-item navbar-toggler " type="button">
-            <h4 class="font-weight-normal mb-0">VLE <i
-                class="mdi mdi mdi-book-open-page-variant mdi-24px float-right"></i></h4>
-          </button>
-
-          <button class="nav-item navbar-toggler " type="button">
-            <h4 class="font-weight-normal mb-0">Repository <i class="mdi mdi mdi-bookmark mdi-24px float-right"></i>
-            </h4>
-          </button>
-
-          <button class="navbar nav-item navbar-toggler" type="button">
-            <h4 class="font-weight-normal mb-0">E-Library <i class="mdi mdi mdi-library mdi-24px float-right"></i></h4>
-          </button>
-
-          <li class="nav-item nav-profile dropdown">
-
-            <a class="nav-link dropdown-toggle" id="profileDropdown" href="#" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <div class="nav-profile-img">
-                <img src="../../assets/images/faces/face15.jpg" alt="image">
-                <span class="availability-status online"></span>
+    <div class="container-fluid page-body-wrapper full-page-wrapper">
+      <div class="content-wrapper d-flex align-items-center text-center error-page bg-main"
+        style="background-color: #550d0e;">
+        <div class="row flex-grow">
+          <div class="col-lg-7 mx-auto text-white">
+            <div class="row align-items-center d-flex flex-row">
+              <div class="col-lg-6 text-lg-right pr-lg-4">
+                <h1 class="display-1 mb-0">503</h1>
               </div>
-              <div class="nav-profile-text">
-                <p class="mb-1 text-white">Rizul John Reyes</p>
+              <div class="col-lg-6 error-page-divider text-lg-left pl-lg-4">
+                <div class="brand-logo">
+                  <img class="mx-auto d-block" style="width: 25%; height: 25%;" src="../../assets/images/MSUGENSAN.png">
+                </div>
+                <h2>SORRY!</h2>
+                <h3 class="font-weight-light">The site is currently undergoing a system maintenance to serve you better.
+                  Please come back later.</h3>
               </div>
-            </a>
-
-            <div class="dropdown-menu navbar-dropdown" aria-labelledby="profileDropdown">
-              <a class="dropdown-item" href="#">
-                <i class="mdi mdi-account-settings me-2 text-success"></i> User Account </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">
-                <i class="mdi mdi-logout me-2 text-primary"></i> Signout </a>
             </div>
-          </li>
-          <li class="nav-item d-none d-lg-block full-screen-link">
-            <a class="nav-link">
-              <i class="mdi mdi-fullscreen" id="fullscreen-button"></i>
-            </a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" href="#" data-bs-toggle="dropdown"
-              aria-expanded="false">
-              <i class="mdi mdi-email-outline"></i>
-              <span class="count-symbol bg-warning"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-              aria-labelledby="messageDropdown">
-              <h6 class="p-3 mb-0">Messages</h6>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src="../../assets/images/faces/face4.jpg" alt="image" class="profile-pic">
+            <!--               
+              <div class="row mt-5">
+                <div class="col-12 text-center mt-xl-2">
+                  <a class="text-white font-weight-medium" onclick="history.back(-1)">Back to Previous Page</a>
                 </div>
-                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-                  <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Mark send you a message</h6>
-                  <p class="text-gray mb-0"> 1 Minutes ago </p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src="../../assets/images/faces/face2.jpg" alt="image" class="profile-pic">
-                </div>
-                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-                  <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Cregh send you a message</h6>
-                  <p class="text-gray mb-0"> 15 Minutes ago </p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <img src="../../assets/images/faces/face3.jpg" alt="image" class="profile-pic">
-                </div>
-                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-                  <h6 class="preview-subject ellipsis mb-1 font-weight-normal">Profile picture updated</h6>
-                  <p class="text-gray mb-0"> 18 Minutes ago </p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <h6 class="p-3 mb-0 text-center">4 new messages</h6>
-            </div>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" href="#"
-              data-bs-toggle="dropdown">
-              <i class="mdi mdi-bell-outline"></i>
-              <span class="count-symbol bg-danger"></span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
-              aria-labelledby="notificationDropdown">
-              <h6 class="p-3 mb-0">Notifications</h6>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-success">
-                    <i class="mdi mdi-calendar"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-                  <h6 class="preview-subject font-weight-normal mb-1">Event today</h6>
-                  <p class="text-gray ellipsis mb-0"> Just a reminder that you have an event today </p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-warning">
-                    <i class="mdi mdi-settings"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-                  <h6 class="preview-subject font-weight-normal mb-1">Settings</h6>
-                  <p class="text-gray ellipsis mb-0"> Update dashboard </p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item preview-item">
-                <div class="preview-thumbnail">
-                  <div class="preview-icon bg-info">
-                    <i class="mdi mdi-link-variant"></i>
-                  </div>
-                </div>
-                <div class="preview-item-content d-flex align-items-start flex-column justify-content-center">
-                  <h6 class="preview-subject font-weight-normal mb-1">Launch Admin</h6>
-                  <p class="text-gray ellipsis mb-0"> New admin wow! </p>
-                </div>
-              </a>
-              <div class="dropdown-divider"></div>
-              <h6 class="p-3 mb-0 text-center">See all notifications</h6>
-            </div>
-          </li>
-        </ul>
-        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
-          data-toggle="offcanvas">
-          <span class="mdi mdi-menu"></span>
-        </button>
-      </div>
-    </nav>
-    <!-- partial -->
-    <div class="container-fluid page-body-wrapper">
-      <!-- partial:../../partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <ul class="nav">
-          <li class="nav-item nav-profile">
-            <a href="#" class="nav-link">
-              <div class="nav-profile-image">
-                <img src="../../assets/images/faces/face15.jpg" alt="profile">
-                <span class="login-status online"></span>
-                <!--change to offline or busy as needed-->
               </div>
-              <div class="nav-profile-text d-flex flex-column">
-                <span class="font-weight-bold mb-2">Rizul John Reyes</span>
-                <span class="text-secondary text-small">BS Information Technology</span>
-              </div>
-
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../../index.html">
-              <span class="menu-title">Dashboard</span>
-              <i class="mdi mdi-home menu-icon"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <span class="menu-title">My Schedule</span>
-              <i class="menu-arrow"></i>
-              <i class="mdi mdi-table-large menu-icon"></i>
-            </a>
-            <div class="collapse" id="ui-basic">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../My-Sched/My-Schedule.html">My Schedule</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../My-Sched/Subject-Plotting.html">Subject Plotting</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#general-pages" aria-expanded="false" aria-controls="general-pages">
-              <span class="menu-title">My Grades</span>                
-              <i class="menu-arrow"></i>
-              <i class="mdi mdi mdi-book-minus menu-icon"></i>
-            </a>
-            <div class="collapse" id="general-pages">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../My-Grades/My_Grades.html">My Grades</a></li>
-                <li class="nav-item"> <a class="nav-link" href="../My-Grades/Visualization_ofGrades.html">Visualization of Grades</a></li>
-              </ul>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Inc-monitor/INC_Monitoring.html">
-              <span class="menu-title">INC Monitoring</span>
-              <i class="mdi mdi mdi-chart-areaspline menu-icon"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Downloadable-Forms/Downloadable_Forms.html">
-              <span class="menu-title">Downloadable Forms</span>
-              <i class="mdi mdi mdi-cloud-download menu-icon"></i>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../Eval-Form/Eval_Rating.html">
-              <span class="menu-title">Evaluation Form</span>
-              <i class="mdi mdi mdi-clipboard-text menu-icon"></i>
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <!-- partial -->
-      <div class="main-panel">
-        <div class="content-wrapper">
-          <div class="page-header">
-            <h3 class="page-title"><i class="mdi mdi-wrench menu-icon"></i> Maintenance </h3>
-            <nav aria-label="breadcrumb">
-              <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Maintenance</li>
-              </ol>
-            </nav>
+              <div class="row mt-5">
+                <div class="col-12 mt-xl-2">
+                  <p class="text-white font-weight-medium text-center">Copyright &copy; 2022 All rights reserved.</p>
+                </div> -->
           </div>
-          <!-- START HERE-->
-
-          <div class="col-sm-12">
-            <!--Colleges Page-->
-            <div class="mt-1 mb-3 p-3 button-container border bg-white">
-              <h4 class="card-title">Colleges Maintenance</h4>
-              <div class="form-group floating-label">
-                <select name="college_input" id="college_input" class="custom-select" required="">
-                  <option value="1">COLLEGE OF ENGINEERING</option>
-                  <option value="2">COLLEGE OF BUSINESS ADMINISTRATION &amp; ACCOUNTANCY (BA&amp;A)</option>
-                  <option value="3">COLLEGE OF EDUCATION (COED)</option>
-                  <option value="4">COLLEGE OF SOCIAL SCIENCE AND HUMANITIES (CSSH)</option>
-                  <option value="5">COLLEGE OF NATURAL SCIENCE AND MATHEMATICS (CNSM)</option>
-                  <option value="6">COLLEGE OF AGRICULTURE (COA)</option>
-                  <option value="7">COLLEGE OF FISHERIES (COF)</option>
-                  <option value="8">DIPLOMA PROGRAMS (2 Year Course)</option>
-                  <option value="9">COLLEGE OF SAMPLES</option>
-                </select>
-              </div>
-              <div class="row mt-3">
-                <div class="col-sm-12">
-                  <!--Hoverable Table - Account Management-->
-                  <div class="mt-1 mb-3 p-3 button-container  bg-white shadow-sm border table-responsive">
-                    <h6><i class="fa fa-users"></i> Program List</h6>
-                    <div id="" class="table-responsive">
-                      <table id="colleges_tbl" class="table table-hover">
-                        <thead>
-
-                        </thead>
-                        <tbody id="colleges_tbl_body">
-              
-                          
-                        </tbody>
-                        <!-- Table Footer -->
-                      </table>
-                      <div class="form-group" style="float: right;" id="table_footer_colleges"><br><button type="button"
-                          value="1" class="btn btn-primary" name="btnAddProgramModal" id="btnAddProgramModal"
-                          style="float: right;" data-toggle="modal" data-target="#createProgramModal"><i
-                            class="fa fa-file-excel"></i> Create Program</button></div>
-                    </div>
-                  </div>
-                  <br>
-                  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#createCollegeModal"><i
-                      class="fa fa-file-excel"></i> Create College</button>
-
-                </div>
-              </div>
-              <!--/Colleges Page-->
-
-            </div>
-          </div>
-          <!-- END HERE-->
-
         </div>
-        <!-- content-wrapper ends -->
-        <!-- partial:../../partials/_footer.html -->
-        <footer class="footer">
-        </footer>
-        <!-- partial -->
       </div>
-      <!-- main-panel ends -->
     </div>
-    <!-- page-body-wrapper ends -->
+    <!-- content-wrapper ends -->
+  </div>
+  <!-- page-body-wrapper ends -->
   </div>
   <!-- container-scroller -->
   <!-- plugins:js -->
@@ -331,9 +69,6 @@
   <script src="../../assets/js/hoverable-collapse.js"></script>
   <script src="../../assets/js/misc.js"></script>
   <!-- endinject -->
-  <!-- Custom js for this page -->
-  <script src="../../assets/js/file-upload.js"></script>
-  <!-- End custom js for this page -->
 </body>
 
 </html>
